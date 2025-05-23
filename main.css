@@ -1,0 +1,544 @@
+/* ==================================================== /
+# Project Title: Dashboard Styling
+# Started:  08/05/2025 17:41
+# Author: Picstostudio
+/ ==================================================== */
+
+/*--- Change the variable colours below to match your needs! ---*/
+:root {
+  /* Main Colours */
+  --black: #000000;
+  --grey: #333333;
+  --penn-red: #970600;
+  --engineering-red: #D70901;
+  --purple: #6F1490;
+  --lavendar: #C589E8;
+
+  /* Less Used Colours */
+  --pale-purple: #f4d6ff;
+  --russian-violet: #340844;
+
+  /* Section One Colours */
+  --sec-one-background-c: rgba(250, 210, 81, 0.2);
+  --sec-one-main-c: rgb(255, 242, 92);
+  --sec-one-second-c: rgb(255, 246, 143);
+
+  /* Section Two Colours */
+  --qj-background: rgba(62, 90, 27, 0.4);
+  --qj-main: rgb(128, 156, 19);
+  --qj-second: rgb(181, 229, 80);
+
+  /* Section Three Colours */
+  --sec-three-background-c: rgba(60, 9, 108, 0.3);
+  --sec-three-main-c: rgb(123, 66, 180);
+  --sec-three-second-c: rgb(184, 129, 230);
+
+  /* Section Four Colours */
+  --sec-four-background-c: rgba(229, 106, 179, 0.3);
+  --sec-four-main-c: rgb(239, 135, 190);
+  --sec-four-second-c: rgb(252, 188, 215);
+
+  /* Section Five Colours */
+  --sec-five-background-c: rgba(0, 0, 255, 0.2);
+  --sec-five-main-c: rgb(31, 31, 255);
+  --sec-five-second-c: rgb(120, 121, 255);
+
+  /* Section Six Colours */
+  --sec-six-background-c: rgba(48, 116, 155, 0.3);
+  --sec-six-main-c: rgb(87, 193, 255);
+  --sec-six-second-c: rgb(147, 215, 255);
+}
+
+/* Main Styling */
+html {
+  background-color: var(--black);
+  font-size: 16px;
+}
+
+header {
+  height: 7vh;
+  background-color: var(--grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: var(--purple) solid 2px;
+}
+
+h1 {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  background: -webkit-linear-gradient(360deg, rgba(197, 137, 232, 1) 0%, rgba(206, 71, 113, 1) 62%, rgba(209, 47, 70, 1) 84%, rgba(215, 9, 1, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3em;
+}
+
+h2,
+summary {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2em;
+}
+
+h3 {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5em;
+  margin: 0.75rem 0 0.5rem 0.75rem;
+}
+
+h4 {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
+}
+
+h5 {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+}
+
+h6 {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.8em;
+}
+
+p,
+.link-detail {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+
+main {
+  min-height: 87vh;
+  width: 98vw;
+  margin: 1vh auto 1vh auto;
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+#search-h {
+  margin-bottom: 1rem;
+}
+
+/* Search Box Styling */
+.search-sect {
+  margin: 0.75rem;
+  padding: 0.75rem;
+  background-color: rgba(197, 137, 232, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  outline: var(--black) solid 2px;
+  color: var(--pale-purple);
+}
+
+form {
+  padding-top: 1rem;
+}
+
+/* Input Search Styling (Targets input type of text only) */
+input[type=text] {
+  border-width: 1px;
+  border-radius: 25px;
+  width: 400px;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 900;
+  background-color: var(--russian-violet);
+  color: var(--pale-purple);
+}
+
+input[type=text]::placeholder {
+  color: var(--lavendar);
+}
+
+input[type=text]:focus {
+  outline: none;
+  border: 1px solid var(--lavendar);
+  background-color: var(--pale-purple);
+  color: var(--russian-violet);
+}
+
+button {
+  background-color: var(--russian-violet);
+  border-radius: 2rem;
+  padding: 0.7rem;
+  cursor: pointer;
+  color: var(--lavendar)
+}
+
+button:hover {
+  background-color: var(--pale-purple);
+  color: var(--russian-violet);
+}
+
+/*  ;                Detail/Summary Core Style                 */
+details summary {
+  cursor: pointer;
+  transition: margin 500ms ease-out;
+}
+
+details {
+  margin: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  outline: var(--black) 2px solid;
+  overflow: hidden;
+}
+
+details summary::before {
+  font-family: "Font Awesome 6 Free"; /*--- Needed for the Font Awesome icons ---*/
+  margin-right: 8px; /*--- Needed to give some space after the icons ---*/
+  transition: transform 500ms ease, opacity 500ms ease; /*--- Adds a little transition between icons (open and closed) ---*/
+  cursor: pointer;
+}
+
+details[open]>summary::before {
+  font-weight: 500; /*--- Changes from filled to outline (if applicable) ---*/
+  opacity: 0.7; /*--- Changes icon to slightly transparent ---*/
+  cursor: pointer;
+}
+
+/* ~ ====================================================
+  ~                                       Section 
+  ~                                         One
+  ~ ==================================================== */
+#deet-one summary::before{
+  content: '\f005'; /*--- Gives the detail element a different icon ---*/
+  font-weight: 900; /*--- Used for outline (500) or filled (900) icons ---*/
+}
+
+#deet-one[open]>summary::before {
+  font-weight: 500;
+}
+
+#sumry-one,
+.sect-one-link,
+.sect-one-link>i,
+.sect-one-link>span {
+  color: var(--sec-one-main-c);
+}
+
+.sect-one-link:hover>i,
+.sect-one-link:hover>span {
+  color: var(--sec-one-second-c);
+}
+
+#deet-one {
+  background-color: var(--sec-one-background-c);
+}
+
+/*--- Below is used for the SVG icons ---*/
+.sect-one-links-logos {
+  filter: invert(85%) sepia(35%) saturate(718%) hue-rotate(350deg) brightness(106%) contrast(108%);
+}
+
+.sect-one-link:hover>.sect-one-links-logos {
+  filter: invert(93%) sepia(17%) saturate(1312%) hue-rotate(326deg) brightness(103%) contrast(127%);
+}
+
+/* ~ ====================================================
+  ~                                 Quick Jump
+  ~                                     Section
+ ~ ==================================================== */
+#deet-qj summary::before {
+  content: '\f52e';
+  font-weight: 900;
+}
+
+#sumry-qj,
+.qj-link,
+.qj-link>i,
+.qj-link>span {
+  color: var(--qj-main);
+}
+
+.qj-link:hover>i,
+.qj-link:hover>span {
+  color: var(--qj-second);
+}
+
+#deet-qj {
+  background-color: var(--qj-background);
+}
+
+/* ~ ====================================================
+  ~                                     Section  
+  ~                                      Three
+  ~ ==================================================== */
+#deet-three summary::before {
+  content: '\f02e';
+  font-weight: 900;
+}
+
+#deet-three[open]>summary::before {
+  font-weight: 500;
+}
+
+#deet-three {
+  background-color: var(--sec-three-background-c);
+}
+
+#sumry-three,
+.sect-three-link,
+.sect-three-link>i,
+.sect-three-link>span {
+  color: var(--sec-three-main-c);
+}
+
+.sect-three-link:hover>i,
+.sect-three-link:hover>span {
+  color: var(--sec-three-second-c);
+}
+
+/* ~ ======== Sub Section One | Section Three ======= */
+#deet-three-sub-one summary::before {
+  content: '\f015'; /*--- Change this for the icon. ---*/
+}
+
+/* ~ ======== Sub Section Two | Section Three ======= */
+#deet-three-sub-two summary::before {
+  content: '\f015'; /*--- Change this for the icon. ---*/
+}
+
+/* ~ ======== Sub Section Three | Section Three ======= */
+#deet-three-sub-three summary::before {
+  content: '\f015'; /*--- Change this for the icon. ---*/
+}
+
+/* ~ ======== Sub Section Four | Section Three ======= */
+#deet-three-sub-four summary::before {
+  content: '\f015'; /*--- Change this for the icon. ---*/
+}
+
+/* ~ ======== Sub Section Six | Section Three ======= */
+#deet-three-sub-five summary::before {
+  content: '\f015'; /*--- Change this for the icon. ---*/
+}
+
+/*--- Below is used for all sections for styling within Useful Links ---*/
+.deet-three-sub-c {
+  outline-color: var(--sec-three-main-c);
+  color: var(--sec-three-main-c)
+}
+
+/*--- Below is used for the SVG icons ---*/
+.sect-three-links-logos {
+  filter: invert(29%) sepia(17%) saturate(6160%) hue-rotate(249deg) brightness(91%) contrast(85%);
+}
+
+.sect-three-link:hover>.sect-three-links-logos {
+  filter: invert(79%) sepia(71%) saturate(4821%) hue-rotate(222deg) brightness(98%) contrast(84%);
+}
+
+/* ~ ====================================================
+  ~                                       Section
+  ~                                         Four
+  ~ ==================================================== */
+#deet-four summary::before {
+  content: '\f015';
+  font-weight: 900;
+}
+
+#sumry-four,
+.sect-four-link,
+.sect-four-link>i,
+.sect-four-link>span {
+  color: var(--sec-four-main-c);
+}
+
+.sect-four-link:hover>i,
+.sect-four-link:hover>span {
+  color: var(--sec-four-second-c);
+}
+
+#deet-four {
+  background-color: var(--sec-four-background-c);
+}
+
+.home-lab-logos {
+  width: 100%;
+  filter: invert(84%) sepia(17%) saturate(3126%) hue-rotate(285deg) brightness(96%) contrast(95%);
+}
+
+.sect-four-link:hover>.home-lab-logos {
+  filter: invert(74%) sepia(7%) saturate(1634%) hue-rotate(292deg) brightness(110%) contrast(98%);
+}
+
+/* ~ ====================================================
+  ~                                        Section
+  ~                                          Five
+  ~ ==================================================== */
+#deet-five summary::before {
+  content: '\f015';
+  font-weight: 900;
+}
+
+#sumry-five,
+.sect-five-link,
+.sect-five-link>i,
+.sect-five-link>span {
+  color: var(--sec-five-main-c);
+}
+
+.sect-five-link:hover>i,
+.sect-five-link:hover>span {
+  color: var(--sec-five-second-c);
+}
+
+#deet-five {
+  background-color: var(--sec-five-background-c);
+}
+
+.sect-five-links-logos {
+  width: 100%;
+  filter: invert(11%) sepia(98%) saturate(5962%) hue-rotate(247deg) brightness(98%) contrast(117%);
+}
+
+.sect-five-link:hover>.sect-five-links-logos {
+  filter: invert(40%) sepia(98%) saturate(681%) hue-rotate(210deg) brightness(103%) contrast(101%);
+}
+
+/* ~ ======== Web Development | Development ======= */
+#deet-five-sub-one summary::before {
+  content: '\f015'; /*--- Change this for the icon. ---*/
+}
+
+/* ~ ======== Programming | Development ======= */
+#deet-five-sub-two summary::before{
+  content: '\f015'; /*--- Change this for the icon. ---*/
+}
+
+.deet-five-sub-c {
+  outline-color: var(--sec-five-main-c);
+  color: var(--sec-five-main-c)
+}
+
+/* ~ ====================================================
+  ~                                     Section
+  ~                                        Six
+  ~ ==================================================== */
+#deet-six summary::before {
+  content: '\f015';
+  font-weight: 900;
+}
+
+#sumry-six,
+.sect-six-link,
+.sect-six-link>i,
+.sect-six-link>span {
+  color: var(--sec-six-main-c);
+}
+
+.sect-six-link:hover>i,
+.sect-six-link:hover>span {
+  color: var(--sec-six-second-c);
+}
+
+#deet-six {
+  background-color: var(--sec-six-background-c);
+}
+
+.sect-six-links-logos {
+  width: 100%;
+  filter: invert(59%) sepia(51%) saturate(609%) hue-rotate(171deg) brightness(106%) contrast(104%);
+}
+
+.sect-six-link:hover>.sect-six-links-logos {
+  filter: invert(72%) sepia(37%) saturate(458%) hue-rotate(171deg) brightness(102%) contrast(103%);
+}
+
+/* ~ ====================================================
+~                               Re-usable Styling
+~                                     Section
+~ ==================================================== */
+/*  ;                    SVG Hover Colour Core Style                 */
+.sect-one-link:hover>span,
+.qj-link:hover>span,
+.sect-three-link:hover>span,
+.sect-four-link:hover>span,
+.sect-five-link:hover>span,
+.sect-six-link:hover>span {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+.fix-direction {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+/*  ;                Article Core Style                 */
+article {
+  padding: 0.5rem;
+  margin: 0 0.5rem 0 0.5rem;
+  border-radius: 1rem;
+  max-width: 150px;
+  width: fit-content;
+}
+
+article>a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+.svg {
+  max-width: 54px;
+  max-height: 50px;
+}
+
+/* ~ ====================================================
+  ~                                  Footer 
+  ~                                 Section
+  ~ ==================================================== */
+footer {
+  left: 0;
+  bottom: 0;
+  height: 4vh;
+  width: 100%;
+  font-family: 'ret_font_curly_e_spaceRG', monospace;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--grey);
+  color: var(--engineering-red);
+  outline: var(--purple) solid 2px;
+  position: fixed;
+  word-spacing: -6px;
+}
+
+.f-link:hover {
+  color: var(--penn-red);
+  text-decoration: underline;
+}
+
+.f-link:visited {
+  color:#5f0300;
+}

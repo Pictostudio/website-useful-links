@@ -1,7 +1,6 @@
 # New Tab - Dashboard
 With this project, I created one for myself and then altered this one to allow for others to either host, slefhost and use.
 
-
 ## Features
 - Feature One
 - Feature Two
@@ -40,4 +39,3 @@ With this project, I created one for myself and then altered this one to allow f
 - Minimalistic Theme
 
 ## Screenshots
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)

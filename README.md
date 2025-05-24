@@ -2,9 +2,9 @@
 With this project, I created one for myself and then altered this one to allow for others to either host, slefhost and use.
 
 ## Features
-- Feature One
-- Feature Two
-- Feature Three
+- Static Webpage
+- Colour Customisation
+- Search Box
 
 
 ## License

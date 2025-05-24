@@ -22,6 +22,7 @@ With this project, I created one for myself and then altered this one to allow f
   <a href="https://github.com/JordanPicton">
     <img id="github" alt="" width="50" src="https://www.svgrepo.com/show/512317/github-142.svg">
   </a>
+  <!-- Need to add link to docs. -->
 
 ## Tech Stack
 <div>

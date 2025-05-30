@@ -331,7 +331,7 @@ details[open]>summary::before {
   content: '\f015'; /*--- Change this for the icon. ---*/
 }
 
-/* ~ ======== Sub Section Six  Icon | Section Three ======= */
+/* ~ ======== Sub Section Five  Icon | Section Three ======= */
 #deet-three-sub-five summary::before {
   content: '\f015'; /*--- Change this for the icon. ---*/
 }

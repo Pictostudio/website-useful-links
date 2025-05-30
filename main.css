@@ -311,27 +311,27 @@ details[open]>summary::before {
   color: var(--sec-three-second-c);
 }
 
-/* ~ ======== Sub Section One | Section Three ======= */
+/* ~ ======== Sub Section One Icon | Section Three ======= */
 #deet-three-sub-one summary::before {
   content: '\f015'; /*--- Change this for the icon. ---*/
 }
 
-/* ~ ======== Sub Section Two | Section Three ======= */
+/* ~ ======== Sub Section Two Icon | Section Three ======= */
 #deet-three-sub-two summary::before {
   content: '\f015'; /*--- Change this for the icon. ---*/
 }
 
-/* ~ ======== Sub Section Three | Section Three ======= */
+/* ~ ======== Sub Section Three Icon | Section Three ======= */
 #deet-three-sub-three summary::before {
   content: '\f015'; /*--- Change this for the icon. ---*/
 }
 
-/* ~ ======== Sub Section Four | Section Three ======= */
+/* ~ ======== Sub Section Four Icon | Section Three ======= */
 #deet-three-sub-four summary::before {
   content: '\f015'; /*--- Change this for the icon. ---*/
 }
 
-/* ~ ======== Sub Section Six | Section Three ======= */
+/* ~ ======== Sub Section Six  Icon | Section Three ======= */
 #deet-three-sub-five summary::before {
   content: '\f015'; /*--- Change this for the icon. ---*/
 }

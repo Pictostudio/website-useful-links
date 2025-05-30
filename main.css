@@ -419,12 +419,12 @@ details[open]>summary::before {
   filter: invert(40%) sepia(98%) saturate(681%) hue-rotate(210deg) brightness(103%) contrast(101%);
 }
 
-/* ~ ======== Web Development | Development ======= */
+/* ~ ======== Sub Section One Icon | Section Five ======= */
 #deet-five-sub-one summary::before {
   content: '\f015'; /*--- Change this for the icon. ---*/
 }
 
-/* ~ ======== Programming | Development ======= */
+/* ~ ======== Sub Section Two Icon | Section Five ======= */
 #deet-five-sub-two summary::before{
   content: '\f015'; /*--- Change this for the icon. ---*/
 }
